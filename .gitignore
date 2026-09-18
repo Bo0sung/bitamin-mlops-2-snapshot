@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local settings and secrets
+.env
+.env.*
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Notebook / test cache
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Generated ML artifacts
+models/
+artifacts/
+wandb/
+*.joblib
+*.pkl
