@@ -1,42 +1,50 @@
-# 2주차 완료 상태
+# 2주차 Git/GitHub 실습 기록
 
-Git/GitHub의 branch, commit, Pull Request, review, merge 흐름을 거쳐 여러 사람의 변경을 하나의 코드베이스로 통합한 결과다.
+> 이 파일은 2주차 실습을 시작하기 위한 빈 기록 템플릿입니다. 각 조가 직접 수행한 결과로 내용을 채워주세요.
 
-## 통합된 역할
+## 체크포인트 1. Repository 개설 및 1주차 결과물 반영
 
-| 역할 | 최종 코드에 반영된 내용 |
-|---|---|
-| 데이터 전처리 담당 | 결측치 처리, 수치형/범주형 전처리 pipeline |
-| Logistic Regression 담당 | 불균형을 고려한 Logistic Regression |
-| Random Forest 담당 | 비교용 Random Forest 모델 |
-| 평가 담당 | Accuracy, Precision, Recall, F1, ROC-AUC 출력 |
-
-## 정상 실행 확인
+- 실행한 명령어:
 
 ```bash
-python app.py
+# 여기에 작성
 ```
 
-정상적으로 실행되면 두 모델의 평가표와 F1 기준 best model이 출력된다.
+- 결과 화면:
+- 막혔던 지점과 해결 방법:
 
-```text
-=== Model comparison ===
-                     accuracy  precision  recall      f1  roc_auc
-Logistic Regression       ...        ...     ...     ...      ...
-Random Forest             ...        ...     ...     ...      ...
+## 체크포인트 2. 조원별 branch 생성 및 작업
 
-Best model by F1: ...
-```
+- 생성한 branch:
+- 담당 작업:
+- 결과 화면:
+- 막혔던 지점과 해결 방법:
 
-Docker에서도 같은 명령이 실행된다.
+## 체크포인트 3. Pull Request 생성 및 review
 
-```bash
-docker build -t bitamin-mlops-week2 .
-docker run --rm bitamin-mlops-week2
-```
+- Pull Request URL:
+- review 내용:
+- 결과 화면:
+- 막혔던 지점과 해결 방법:
 
-## Snapshot에서 확인할 수 없는 것
+## 체크포인트 4. 모든 Pull Request merge
 
-branch 생성, review comment, Merge Conflict 해결은 Git 이력과 Pull Request에서 발생하는 과정이다. 이 snapshot은 모든 충돌이 해결되어 main에 통합된 **최종 코드 상태**만 제공한다.
+- merge한 Pull Request:
+- 결과 화면:
+- 막혔던 지점과 해결 방법:
 
-각 조는 자신의 repository에서 직접 branch와 Pull Request를 만들고, 실행 화면 및 충돌 해결 과정을 `week2/README.md`에 기록해야 한다. 이 문서를 조별 실습 증거로 그대로 제출하면 안 된다.
+## 체크포인트 5. Merge Conflict 발생 및 해결
+
+- 충돌이 발생한 파일과 원인:
+- 해결 방법:
+- 결과 화면:
+- 막혔던 지점과 해결 방법:
+
+## 최종 확인
+
+- [ ] 조원 전원이 개인 branch에서 작업했다.
+- [ ] 조원 전원이 Pull Request를 생성했다.
+- [ ] 최소 1건 이상의 review comment를 남겼다.
+- [ ] 모든 Pull Request가 main에 merge되었다.
+- [ ] Merge Conflict를 한 번 이상 해결했다.
+- [ ] 1주차 baseline 코드가 최종 main에서 정상 실행된다.
